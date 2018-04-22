@@ -162,7 +162,7 @@ vec_init, class_init = next(batchPool)
 model.partial_fit(vec_init, class_init, np.unique(class_train))
 for vec_batch, class_batch in batchPool:
     model.partial_fit(vec_batch, class_batch)
-    del vec_batch, class_batch
+
 
 del vec_train
 del class_train
